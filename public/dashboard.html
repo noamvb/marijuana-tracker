@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marijuana Tracker - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="src/js/firebase.js" defer></script>
+    <script src="src/js/dashboard.js" defer></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-5">
+        <h1 class="text-3xl font-bold mb-5">Dashboard</h1>
+        <div id="summary" class="bg-white p-5 rounded shadow-md">
+            <h2 class="text-xl font-semibold mb-3">Summary</h2>
+            <p id="totalPurchases" class="text-lg">Total Purchases: $0</p>
+            <p id="totalConsumption" class="text-lg">Total Consumption: 0g</p>
+        </div>
+        <div class="mt-5">
+            <h2 class="text-xl font-semibold mb-3">Recent Purchases</h2>
+            <ul id="purchaseList" class="list-disc pl-5"></ul>
+        </div>
+        <div class="mt-5">
+            <h2 class="text-xl font-semibold mb-3">Recent Consumption</h2>
+            <ul id="consumptionList" class="list-disc pl-5"></ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "marijuana-tracker",
+  "version": "1.0.0",
+  "description": "A web application to track marijuana purchases and consumption.",
+  "main": "src/js/app.js",
+  "scripts": {
+    "start": "live-server public",
+    "build": "tailwindcss build src/css/styles.css -o public/styles.css"
+  },
+  "dependencies": {
+    "firebase": "^9.0.0",
+    "tailwindcss": "^2.0.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "keywords": [
+    "marijuana",
+    "tracker",
+    "firebase",
+    "tailwindcss"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
